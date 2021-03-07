@@ -26,7 +26,7 @@ This is the landing page after a student have login. There are welcome message, 
 
 ### View Profile
 Student can view their profile here.
-![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github%20Images/Edit%20Profile%20(Image).PNG)
+![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github%20Images/View%20Profile.PNG)
 
 ### Edit Description and Achievement
 This is the student edit profile page. Student can change their profile description and achievement here.
