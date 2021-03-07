@@ -1,0 +1,101 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Unicode character encoding - multi-language compatibility -->
+    <meta charset="utf-8">
+    <!-- Set the initial view zooming scale for mobile device  -->
+    <meta name="viewport" content="width = device-width,
+          initial-scale = 1" />
+    <title>Student e-Portfolio</title>
+    <!-- Reference to customized styling for this website -->
+    <link rel="stylesheet" type="text/css" href="~/css/Site.css">
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Student ePortfolio</title>     <!-- Reference to Bootstrap CSS, JavaScript/JQuery files -->
+
+   
+    
+
+</head>
+
+<body background="~/images/background.jpg">
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                @if (Context.Session.GetString("Role") != null)
+                {
+                    if (Context.Session.GetString("Role") == "Student")
+                    {
+                        @await Html.PartialAsync("_StudentMenu.cshtml")
+                    }
+                }
+
+                @if (Context.Session.GetString("Role") != null)
+                {
+                    if (Context.Session.GetString("Role") == "Lecturer")
+                    {
+                        @await Html.PartialAsync("_LecturerMenu.cshtml")
+                    }
+                }
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <p style="padding:2px 15px;">
+                    @{ string userId = "Anonymous";
+                        string userRole = "Unknown";
+                        if (Context.Session.GetString("Role") != null)
+                        { userRole = Context.Session.GetString("Role"); }
+                        if (Context.Session.GetString("LoginID") != null)
+                        {
+                            userId = Context.Session.GetString("LoginID");
+                        }
+                        string date = "boilderplate";
+
+                        if (Context.Session.GetString("DateLogin") != null)
+                        {
+                            date = Context.Session.GetString("DateLogin");
+                        }
+                    }
+                    Welcome,&nbsp;
+                    <span style="font-weight:bold">@userId</span>&nbsp;                     (Role: @userRole).&nbsp;
+                    You have logged in since @date
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                @RenderBody()
+            </div>
+        </div>
+
+        
+
+
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        &copy; Ngee Ann Polytechnic. All rights reserved.<br> 535, Clementi Road, S599489.<br>
+                        <a href="www.np.edu.sg">www.np.edu.sg</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+</html>

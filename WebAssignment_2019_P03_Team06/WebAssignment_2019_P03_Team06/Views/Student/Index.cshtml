@@ -1,0 +1,7 @@
+﻿@model IEnumerable<WebAssignment_2019_P03_Team06.Models.Student>
+
+@{ ViewData["Title"] = "View Student";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<!-- Add a partial view to display a list of projects records in a tabular format. -->
+<partial name="~/Views/Student/_ViewStudent.cshtml" model="@Model" />

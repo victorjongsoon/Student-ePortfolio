@@ -1,0 +1,95 @@
+﻿@model IEnumerable<WebAssignment_2019_P03_Team06.Models.Suggestion>
+
+@{
+            ViewData["Title"] = "Feedback";
+            Layout = "~/Views/Shared/_Layout.cshtml";
+        }
+<style>
+    table {
+        font-family: arial, sans-serif;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+    }
+</style>
+
+<h2>Feedback</h2>
+
+
+@*<a asp-action="UpdateStatus">Edit</a>*@
+
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                Suggestion Id
+         
+            </th>
+            <th>
+                Student Id
+            </th>
+            <th>
+                Lecturer Id
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Status
+            </th>
+        
+            <th>
+                Date
+            </th>
+
+            <th></th>
+
+    
+        
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            @if (item.StudentId == Context.Session.GetInt32("studentId"))
+            {
+                <tr>
+                    <td>
+                        @item.SuggestionId.ToString()
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.StudentId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LecturerId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Description)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Status)
+                      
+                    </td>
+                 
+                                  
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+
+                    <td>
+                        <a asp-action="UpdateStatus" asp-controller="Student" asp-route-id="@item.SuggestionId">Update</a>
+                    </td>
+
+
+                </tr>
+            }
+        }
+
+    </tbody>
+    </table>
+
+

@@ -1,0 +1,61 @@
+﻿@model IEnumerable<WebAssignment_2019_P03_Team06.Models.StudentProfile>
+
+<link href="~/css/Site.css" rel="stylesheet" />
+<style>
+    table {
+        font-family: arial, sans-serif;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+    }
+
+    
+  
+}
+</style>
+
+@if (Model.ToList().Count > 0)
+{
+    <div class="table-responsive">
+        <table style="align-content: center;">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th style="display: none;">Email Address</th>
+                    <th>Link</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    @*@if (item.MentorId == Context.Session.GetInt32("LecturerId"))
+                    {*@ 
+                <tr>
+                    <td>@item.StudentId.ToString()</td>
+                    <td>@item.Name</td>
+                    <td style="display: none;">@item.Email</td>
+                    <td><a href="@item.Link">@item.Link</a> </td>
+
+                    <td>
+                        
+                                <a asp-action="Compose" asp-controller="Lecturer"
+                                   asp-route-id="@item.StudentId">Compose Feedback</a> |
+                                
+                                
+    
+                    </td>
+                </tr>
+                            //}
+                            }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <span style="color:red">No record found!</span>
+}

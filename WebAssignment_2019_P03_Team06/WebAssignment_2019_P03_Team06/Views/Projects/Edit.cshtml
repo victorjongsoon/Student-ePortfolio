@@ -1,0 +1,73 @@
+﻿@model WebAssignment_2019_P03_Team06.Models.ProjectViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<environment names="Development">
+    <link rel="stylesheet" href="~/css/mystyle.css" />
+</environment>
+
+<h4 class="PageTitle">Edit Project Details</h4>
+<hr />
+
+<form asp-action="Edit">
+    <fieldset class="FormContent">
+        <div class="form-group row">
+            <label asp-for="ProjectID"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ProjectID" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Title"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="Title" readonly
+                       class="form-control-plaintext" />
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="Descipition"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="Descipition"
+                       class="form-control" />
+                <span asp-validation-for="Descipition" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="ProjectURL"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <input asp-for="ProjectURL"
+                       class="form-control" />
+                <span asp-validation-for="ProjectURL" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label asp-for="StudentIDs"
+                   class="col-sm-3 col-form-label"></label>
+            <div class="col-sm-9 col-md-5">
+                <select asp-for="StudentIDs"
+                        asp-items="@ViewData["StudentList"] as List<SelectListItem>"
+                        class="form-control"></select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-9 offset-sm-3">
+                <button type="submit" value="Save"
+                        class="btn btn-primary" asp-route-id="@Model.StudentIDs">Update!</button>
+            </div>
+        </div>
+        <div>
+            <a asp-action="Index">Back to List</a>
+            <a asp-action="UploadPhoto"
+               asp-route-id="@Model.ProjectID">Upload Photo</a>
+        </div>
+    </fieldset>
+</form>

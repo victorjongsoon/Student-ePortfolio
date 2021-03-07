@@ -1,0 +1,96 @@
+﻿@model WebAssignment_2019_P03_Team06.Models.ProjectViewModel
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    //var data = (ProjectViewModel)ViewData["ProjectInformation"];
+}
+
+<environment names="Development">
+    <link rel="stylesheet" href="~/css/mystyle.css" />
+</environment>
+
+<h4 class="PageTitle">View Project Details</h4>
+<hr />
+<fieldset class="FormContent">
+    <div class="form-group row">
+        <label asp-for="ProjectID"
+               class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9 form-control-plaintext">
+            @Html.DisplayFor(modelItem => Model.ProjectID)
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Title"
+               class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9 form-control-plaintext">
+            @Html.DisplayFor(modelItem => Model.Title)
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Descipition"
+               class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9 form-control-plaintext">
+            @Html.DisplayFor(modelItem => Model.Descipition)
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="ProjectPoster" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+            <img src="~/images/@Model.ProjectPoster" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="ProjectURL"
+               class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9 form-control-plaintext">
+            @Html.DisplayFor(modelItem => Model.ProjectURL)
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Role"
+               class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9 form-control-plaintext">
+            @Html.DisplayFor(modelItem => Model.Role)
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="LeaderStudentID"
+               class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9 form-control-plaintext">
+            @Html.DisplayFor(modelItem => Model.LeaderStudentID)
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="StudentLeaderName"
+               class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9 form-control-plaintext">
+            @Html.DisplayFor(modelItem => Model.StudentLeaderName)
+        </div>
+    </div>
+    <div class="form-group row">
+        <div class="col-sm-9 offset-sm-3">
+            <a asp-action="Edit" asp-controller="Projects"
+               asp-route-id="@Model.ProjectID">Edit</a>
+            <a asp-action="Index"
+               asp-controller="Projects">Back to List</a>
+        </div>
+    </div>
+</fieldset>
+
+
+
+
+
+
+<!--<div>
+    <h4>ProjectViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+</div>
+<div>
+    @@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
+-->

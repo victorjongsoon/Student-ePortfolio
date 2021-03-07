@@ -1,0 +1,10 @@
+﻿@model IEnumerable<WebAssignment_2019_P03_Team06.Models.StudentProfile>
+
+@{
+    ViewData["Title"] = "StudentProfile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4 class="PageTitle" style="text-align: center">View Student Profile</h4>
+
+<partial name="~/Views/Lecturer/_StudentProfile.cshtml" model="@Model" />

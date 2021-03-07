@@ -1,0 +1,13 @@
+﻿@model IEnumerable<WebAssignment_2019_P03_Team06.Models.SentSuggestion>
+
+@{
+    ViewData["Title"] = "Sent";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4 class="PageTitle" style="text-align: center">Sent Suggestions</h4>
+
+<partial name="~/Views/Lecturer/_Sent.cshtml" model="@Model" />
+
+
+

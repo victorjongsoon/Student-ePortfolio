@@ -1,0 +1,83 @@
+﻿@model IEnumerable<WebAssignment_2019_P03_Team06.Models.Student>
+
+
+
+
+
+<style>
+    table {
+        font-family: arial, sans-serif;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+    }
+</style>
+
+
+<a asp-action="Edit">Edit</a>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.StudentId)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Name)
+                    </th>
+                    <th>
+                        Photo
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Email)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Description)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Achievement)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.externalLink)
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    @if (item.StudentId == Context.Session.GetInt32("studentId"))
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.StudentId)
+                            </td>
+                            <td>    
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                @{ string imageFileName = item.Photo; }
+                                <img src="~/images/@imageFileName" style="width:50px" />
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Description)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Achievement)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.externalLink)
+                            </td>
+
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+

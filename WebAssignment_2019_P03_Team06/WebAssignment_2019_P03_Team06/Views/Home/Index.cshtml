@@ -1,0 +1,85 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>  
+    <!-- Unicode character encoding - multi-language compatibility -->
+    <meta charset="utf-8">
+    <!-- Set the initial view zooming scale for mobile device  -->
+    <meta name="viewport" content="width = device-width,
+          initial-scale = 1" />
+    <title>Student e-Portfolio</title>
+    <!-- Reference to customized styling for this website -->
+    <link rel="stylesheet" type="text/css" href="~/css/Site.css">
+    
+</head>
+
+<body background="~/images/background.jpg">
+
+    <div class="topnav">
+        <a class="active" href="~/Home/Index">HOME</a>
+        <a href="#">DIRECTOR'S MESSAGE</a>
+        <a href="/Home/Create">CREATE STUDENT ACCOUNT</a>
+        <a href="/Home/LecturerCreate">CREATE LECTURER ACCOUNT</a>
+        <div class="login-container">
+            <form method="post" action="~/Home/Login">
+                <input type="text" placeholder="Username" name="txtLoginID">
+                <input type="password" placeholder="Password" name="txtPassword" id="txtPassword">
+                <button type="submit">Login</button>
+                <br />
+                <span style="color:red;">@TempData["Message"]</span>
+            </form>
+        </div>
+    </div>
+  
+    <div>
+        <h1 style="text-align: center">Welcome to ABC Polytechnic's ePortfolio</h1>
+        <img src="~/images/BG_image.png" alt="Background Image" width="600" height="430" class="img-fluid" style="display:block; padding-bottom:5px; margin:auto;">
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    &copy; Ngee Ann Polytechnic. All rights reserved.<br> 535, Clementi Road, S599489.<br>
+                    <a href="www.np.edu.sg">www.np.edu.sg</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+
+    This is for login page
+
+    <div class="middle">
+        <div>
+            <label for="UserID">UserID: </label>
+            <input type="text" id="inputID" name="inputID" required minlength="1" maxlength="255">
+        </div>
+
+        <div>
+            <label for="Password">Password: </label>
+            <input type="password" id="inputPass" name="inputPass" required />
+        </div>
+
+        <div>
+            <button class="button" type="button">Forget Password</button>
+            <input class="button" type="button" value="Login" />
+        </div>
+
+        <div>
+            <a>Don't have an account yet?</a>
+            <br />
+            <button class="button">Create a Student Profile</button>
+            <br />
+            <button class="button">Create a Lecturer Profile</button>
+        </div>
+    </div>
+    -->
+</body>
+</html>
