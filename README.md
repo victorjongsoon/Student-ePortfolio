@@ -36,5 +36,25 @@ This is the student edit profile page. Student can change their profile descript
 
 ### Edit Image
 Student can change their profile image here.
+
 ![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github%20Images/Edit%20Profile%20(Image).PNG)
+
+## 6 - Feedback Page
+This is the feedback page where student can view the feedback from their lecturers.
+
+![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github%20Images/Feedback.PNG)
+
+## 7 - Skillset Page
+This is the Skillset page where student can view their skillset.
+
+![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github%20Images/SkillSet.PNG)
+
+# What can be improved in this project?
+1. I have lost the database for this project, therefore, I could not show the data for each of the pages
+2. There is still errors in the personal project page (to allow user to uplaod their projects)
+
+# Skillset required for the project
+* HTML, CSS, Javascript
+* Object-Oriented Programming in C#
+* SQL
 
