@@ -45,6 +45,16 @@ This is the project page where student can view their projects.
 
 ![Image of Student View Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Personal%20Project.PNG)
 
+### Edit Project
+Student can edit their projects in this page.
+
+![Image of Student View Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Edit%20Project.PNG)
+
+### Delete Project
+Student can also choose to delete the project.
+
+![Image of Student View Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Delete%20Project.PNG)
+
 ### Create New Project
 Student can also create new project.
 
