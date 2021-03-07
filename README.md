@@ -27,7 +27,7 @@ This is the landing page after a student have login. There are welcome message, 
 ### View Profile
 Student can view their profile here.
 
-![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/View%20Profile.PNG)
+![Image of Student View Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/View%20Profile.PNG)
 
 ### Edit Description and Achievement
 This is the student edit profile page. Student can change their profile description and achievement here.
@@ -37,17 +37,23 @@ This is the student edit profile page. Student can change their profile descript
 ### Edit Image
 Student can change their profile image here.
 
-![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Edit%20Profile%20(Image).PNG)
+![Image of Student Edit Profile Image Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Edit%20Profile%20(Image).PNG)
 
 ## 6 - Project Page
+### View Project
 This is the project page where student can view their projects.
 
-![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Personal%20Project.PNG)
+![Image of Student View Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Personal%20Project.PNG)
+
+### Create New Project
+Student can also create new project.
+
+![Image of Student Edit Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Add%20New%20Project.PNG)
 
 ## 7 - Feedback Page
 This is the feedback page where student can view the feedback from their lecturers.
 
-![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Feedback.PNG)
+![Image of Student Feedback Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Feedback.PNG)
 
 ## 8 - Skillset Page
 This is the Skillset page where student can view their skillset.
