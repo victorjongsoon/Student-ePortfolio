@@ -2,6 +2,8 @@
 This is a student ePortfolio website created by Asp.Net framework. Student is allowed to edit their profile, upload their personal projects, browse feedback from lecturers and edit their skillset from this website. The lecturer can also login to this website to give student feedback.
 
 # Overview of the project
+I will be sharing what I have done in this project (majority on student profile) below.
+
 ## 1 - Home Page
 This is the landing page of the student ePortfolio website. The nagivation bar includes links for existing student/lecturer to login and new student/lecturer to create account.
 
@@ -45,6 +47,16 @@ This is the project page where student can view their projects.
 
 ![Image of Student View Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Personal%20Project.PNG)
 
+### Edit Project
+Student can edit their projects in this page.
+
+![Image of Student View Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Edit%20Project.PNG)
+
+### Delete Project
+Student can also choose to delete the project.
+
+![Image of Student View Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Delete%20Project.PNG)
+
 ### Create New Project
 Student can also create new project.
 
@@ -59,6 +71,9 @@ This is the feedback page where student can view the feedback from their lecture
 This is the Skillset page where student can view their skillset.
 
 ![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/SkillSet.PNG)
+
+# What can be improved in this project?
+1. The user interface can be improve by making use of the entire page (content in the center, footer at the bottom etc.)
 
 # Skillset required for the project
 * HTML, CSS, Javascript
