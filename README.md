@@ -72,6 +72,9 @@ This is the Skillset page where student can view their skillset.
 
 ![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/SkillSet.PNG)
 
+# What can be improved in this project?
+1. The user interface can be improve by making use of the entire page (content in the center, footer at the bottom etc.)
+
 # Skillset required for the project
 * HTML, CSS, Javascript
 * Object-Oriented Programming in C#
