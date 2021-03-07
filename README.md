@@ -2,6 +2,8 @@
 This is a student ePortfolio website created by Asp.Net framework. Student is allowed to edit their profile, upload their personal projects, browse feedback from lecturers and edit their skillset from this website. The lecturer can also login to this website to give student feedback.
 
 # Overview of the project
+I will be sharing what I have done in this project (student profile) below.
+
 ## 1 - Home Page
 This is the landing page of the student ePortfolio website. The nagivation bar includes links for existing student/lecturer to login and new student/lecturer to create account.
 
