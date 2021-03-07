@@ -73,7 +73,7 @@ This is the feedback page where student can view the feedback from their lecture
 ![Image of Student Feedback Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Feedback.PNG)
 
 ## 8 - Skillset Page
-This is the Skillset page where student can view their skillset.
+This is the Skillset page where student can view their skillset (set by lecturers).
 
 ![Image of Student Edit Profile Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/SkillSet.PNG)
 
