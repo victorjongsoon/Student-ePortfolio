@@ -42,10 +42,15 @@ Student can change their profile image here.
 ![Image of Student Edit Profile Image Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Edit%20Profile%20(Image).PNG)
 
 ## 6 - Project Page
-### View Project
+### View All Projects
 This is the project page where student can view their projects.
 
-![Image of Student View Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Personal%20Project.PNG)
+![Image of Student View All Project Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/Personal%20Project.PNG)
+
+### View Project Details
+Student can view every project detail.
+
+![Image of Student View Project Detail Page](https://github.com/victorjongsoon/Student-ePortfolio/blob/main/Github/View%20Project%20Details.PNG)
 
 ### Edit Project
 Student can edit their projects in this page.
